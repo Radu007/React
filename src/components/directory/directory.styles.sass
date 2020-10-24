@@ -2,3 +2,24 @@
 	border: 3.5px solid #BECADF
 	padding: 94px
 	border-radius: 15px
+.boxes
+	display: grid
+	grid-template-columns: 256px 1fr
+	grid-template-rows: 256px 1fr
+	grid-gap: 20px
+
+.boxes > :first-child
+	grid-column: 1/2
+	grid-row: 1/3
+
+
+.boxes > :not(:first-child)
+	display: grid
+	grid-template-columns: 0.5fr 0.5fr
+	grid-template-rows: 220px
+	align-items: center
+  align-self: 
+
+
+	
+	

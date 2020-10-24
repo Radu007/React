@@ -39,9 +39,11 @@ class Directory extends Component {
 		const {data} = this.state
 		return (
 			<div className='homepage'>
-				{data.map(({id, color_blind_label, ...otherProps}) => (
+				<div className='boxes'>
+					{data.map(({id, color_blind_label, ...otherProps}) => (
 					<DirectoryItem key={id} {...otherProps} />
 				))}
+				</div>
 				
 			</div>
 		)
